@@ -34,8 +34,11 @@ void pedir_datos()
 
 void llenar_matriz()
 {
-    int m=f*c, p=10, c2=0,x=1, z=0;
+    int m=f*c, p, c2=0,x=1, z=0;
     int vec[m];
+
+    printf("Ingrese numero: ");
+    scanf("%d",&p);
 
     for(int i=0;i<m;i++)
     {
@@ -62,11 +65,11 @@ void llenar_matriz()
         x=1;
         p=p+1;
     }
-
+/*
     for(int i=0;i<m;i++)
     {
         printf("%d  ",vec[i]);
-    }
+    }*/
 
     printf("\nMATRIZ DE NUMEROS PRIMOS\n");
 
